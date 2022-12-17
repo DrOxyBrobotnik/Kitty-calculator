@@ -9,11 +9,7 @@ internal class Program
         Console.WriteLine("Enter your operator(+, -, /, *)");
         var myOperator = string.Empty;
 
-
-
-
-
-        while (myOperator != "+" &&
+            while (myOperator != "+" &&
             myOperator != "-" &&
             myOperator != "/" &&
             myOperator != "*" ||
@@ -23,27 +19,16 @@ internal class Program
             Console.WriteLine("Please choose a valid operand");
             myOperator = Console.ReadLine();
         }
-
-
-
-
-        if (myOperator == "+")
-
+            if (myOperator == "+")
             Console.WriteLine(x + y);
-
-
-        if (myOperator == "-")
-
+            
+            if (myOperator == "-")
             Console.WriteLine(x - y);
 
-
-        if (myOperator == "*")
-
+            if (myOperator == "*")
             Console.WriteLine(x * y);
-
-
-        if (myOperator == "/")
-
+            
+            if (myOperator == "/")
             Console.WriteLine(x / y);
     }
 }
